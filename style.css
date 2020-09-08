@@ -151,7 +151,7 @@ nav ul li a {
 }
 
 .down-cv {
-    background-color: #0b0b0b;
+    background-color: #505050;
     color: #FFFFFF;
     border: none;
 }
@@ -187,6 +187,7 @@ button:active {
 
 .about-text {
     width: 550px;
+    padding-right:900px;
 }
 
 .about-text p:nth-child(1) {
@@ -219,7 +220,7 @@ button:active {
     outline: none;
     border: none;
     font-family: calibri;
-    background-color: #262525;
+    background-color: #505050;
 }
 
 .services {
@@ -270,7 +271,8 @@ button:active {
 
 .box-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
 
 .box-1 {
@@ -314,7 +316,7 @@ button:active {
     text-align: center;
     width: 230px;
     margin: 0px 0px 20px 0px;
-    color: #8f8f8f;
+    color: #ffdd9d;
 }
 
 .box-1 button,
@@ -393,8 +395,7 @@ line-height: 10px;
     color: #565555;
     font-size: 13px;
     position: relative;
-    left: 45%;
-    bottom: -200px;
+    bottom: -100px;
     
 }
 
@@ -418,9 +419,8 @@ a-social-b a:hover {
 .a-social-b {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 850px;
-    padding-right: 900px;
-    padding-bottom: 150px;
+    justify-items: center;
+    padding-bottom: 0px;
     position: relative;
     transform: translateY(-50%);
 }
@@ -436,6 +436,7 @@ a-social-b a:hover {
     line-height: 0px;
     background-color: #FFFFFF;
     border: 1px solid #cbcbcb;
+    border-radius: 50%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
