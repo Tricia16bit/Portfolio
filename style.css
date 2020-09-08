@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #99d0f5 0%,
+        #a89ff8 20%,
+        #e09df1 40%,
+        #f8a1d4 60%,
+        #f8aaaa 80%,
+        #fddcb0 100%
+    );
+}
+
 body {
     background-color: rgb(201, 200, 200);
     margin: 0px;
@@ -213,14 +225,27 @@ button:active {
     font-size: 16px;
 }
 
+@keyframes bg-animation{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
 .about-text button {
-    width: 120px;
-    height: 40px;
-    color: #FFFFFF;
-    outline: none;
-    border: none;
-    font-family: calibri;
-    background-color: #505050;
+    width: 150px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    font-size: 13px;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+}
+
+.about-text button:hover,
+.about-text button:focus {
+    background-position: right;
 }
 
 .services {
